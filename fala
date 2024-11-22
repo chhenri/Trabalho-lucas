@@ -1,0 +1,22 @@
+O protocolo de resolução de endereço (ARP) é um protocolo ou procedimento que conecta um endereço de protocolo de internet (IP) em constante mudança a um endereço de máquina físico fixo, também conhecido como endereço de controle de acesso a mídia (MAC), em uma rede local (LAN). 
+
+Este procedimento de mapeamento é importante porque os comprimentos dos endereços IP e MAC diferem, e uma conversão é necessária para que os sistemas possam reconhecer uns aos outros. O IP mais usado hoje é o IP versão 4 (IPv4 Um endereço IP tem 32 bits. No entanto, os endereços MAC têm 48 bits de comprimento. O ARP converte o endereço de 32 bit em um de 48 e vice-versa.
+
+Há um modelo de rede conhecido como modelo de Interconexão de sistemas abertos (OSI). Desenvolvido pela primeira vez no final da década 1970s, o modelo OSI usa camadas para dar às equipes de TI uma visualização do que está acontecendo com um sistema de rede específico. Isso pode ser útil para determinar qual camada afeta qual aplicativo, dispositivo ou software instalado na rede e, além disso, qual profissional de TI ou engenharia é responsável por gerenciar essa camada. 
+
+O endereço MAC também é conhecido como camada de link de dados, que estabelece e encerra uma conexão entre dois dispositivos fisicamente conectados para que a transferência de dados possa ocorrer. O endereço IP também é chamado de camada de rede ou camada responsável pelo encaminhamento de pacotes de dados através de diferentes roteadores. O ARP funciona entre essas camadas.
+
+Quando um novo computador entra em uma LAN, lhe é atribuído um endereço IP exclusivo para uso na identificação e comunicação. 
+
+Pacotes de dados chegam a um gateway, destinados a uma máquina host específica. O gateway, ou o hardware em uma rede que permite que os dados fluam de uma rede para outra, solicita que o programa ARP encontre um endereço MAC que corresponda ao endereço IP. O cache ARP mantém um registro de cada endereço IP e seu endereço MAC correspondente. O cache ARP é dinâmico, mas os usuários em uma rede também podem configurar uma tabela ARP estática contendo endereços IP e endereços MAC.
+
+Os caches ARP são mantidos em todos os sistemas operacionais em uma rede Ethernet IPv4 Sempre que um dispositivo solicita um endereço MAC para enviar dados para outro dispositivo conectado à LAN, o dispositivo verifica seu cache ARP para ver se a conexão do endereço IP ao MAC já foi concluída. Se ela existir, será desnecessário fazer uma nova solicitação. No entanto, se a conversão ainda não tiver sido realizada, a solicitação de endereços de rede será enviada e o ARP será executado.
+
+O tamanho de cache do ARP é limitado por design, e os endereços tendem a permanecer no cache por apenas alguns minutos. Ele é purgado regularmente para liberar espaço. Este design também é destinado à privacidade e segurança para evitar que endereços IP sejam roubados ou falsificados durante ciberataques. Enquanto os endereços MAC são fixos, os endereços IP mudam constantemente.
+
+No processo de limpeza, os endereços não utilizados são excluídos, assim como quaisquer dados relacionados a tentativas malsucedidas de comunicação com computadores não conectados à rede ou que não estejam ligados.
+
+
+https://www.fortinet.com/br/resources/cyberglossary/what-is-arp
+
+
